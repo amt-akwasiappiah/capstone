@@ -1,14 +1,15 @@
 import { useState,useEffect,useRef } from "react";
-import { PWD_REGEX,LOGIN_URL } from "../Constants/Constants";
+import { PWD_REGEX,LOGIN_URL,ACCESS_TOKEN } from "../Constants/Constants";
 import axios from 'axios'
 import './Styling/AdminLogin.css'
-
+import { useNavigate } from "react-router-dom";
 
 const AdminLogin = () => {
 
   
     const userRef = useRef<HTMLInputElement | null>(null);
     // const errRef = useRef<HTMLParagraphElement | null>(null);
+  const navigate = useNavigate();
 
     const [userName, setUserName] = useState('')
     const [password, setPassword] = useState('')
@@ -53,7 +54,7 @@ const AdminLogin = () => {
       console.log(response?.data);
 
       //Store the token in global API Context, and use when sending
-      const accessToken = response?.data?.accessToken;
+      // const accessToken = response?.data?.accessToken;
 
       setSuccess(true)
       setPassword('')
@@ -71,6 +72,14 @@ const AdminLogin = () => {
         setErrorMsg('Login Failed')
       }
     }
+    if (ACCESS_TOKEN === 'ADMIN') {
+			navigate('/adminboard');
+    } else if (ACCESS_TOKEN === 'LECTURER') {
+        navigate('/lecturerboard');
+    } else {
+      navigate('/studentboard');
+    }
+        
   }
 
   return (
