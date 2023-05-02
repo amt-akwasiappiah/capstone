@@ -1,0 +1,94 @@
+root{
+    width: 100%
+}
+
+
+/* .login_container{ */
+    /* display:grid; */
+    /* flex-direction: column; */
+    /* align-items: center;
+    justify-content: center; */
+     /* min-width: 400px;
+    min-height:400px;
+    background-color: blue;
+    margin: 50px; */
+/* } */
+
+
+/* .maincontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: brown;
+     max-width: 600px;
+    max-height:700px;
+    margin:100px auto;
+} */
+
+/* body{
+    width: 100%;
+    height:100%;
+}
+
+.username ,.password{
+    justify-self: center;
+    padding:50px 20px 20px;
+}
+
+.password{
+    justify-self: center;
+    padding:20px 20px 25px;
+}
+
+button{
+    margin:10px 15px 25px;
+    padding:0.75rem 10rem
+}
+
+input{
+    width:10rem;
+} */
+
+
+section {
+  width: 100%;
+  max-width: 420px;
+  /* min-height: 120px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin:150px auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-grow: 1;
+  padding-bottom: 1rem;
+}
+
+input[type='text'],
+input[type='password'],
+button {
+  font-family: 'Nunito', sans-serif;
+  font-size: 22px;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+label{
+  margin-top: 1rem;
+}
+
+button {
+  padding: 0.75rem;
+}
+
+button{
+  margin-top: 1.75rem;
+}
