@@ -95,7 +95,8 @@ const AdminLogin = () => {
 								id='username'
 								ref={userRef}
 								onChange={(e) => setUserName(e.target.value)}
-								value={userName}
+                value={ userName }
+                required
 							/>
 							<label htmlFor='password'>password</label>
 							<input
