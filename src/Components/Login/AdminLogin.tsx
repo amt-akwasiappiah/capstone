@@ -1,5 +1,5 @@
 import { useState,useEffect,useRef } from "react";
-import { PWD_REGEX,LOGIN_URL,ACCESS_TOKEN } from "../Constants/Constants";
+import { PWD_REGEX,LOGIN_URL,ACCESS_TOKEN } from '../../Constants/Constants'
 import axios from 'axios'
 import './Styling/AdminLogin.css'
 import { useNavigate } from "react-router-dom";
